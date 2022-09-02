@@ -1,0 +1,128 @@
+.featured{
+    height: 100vh;
+}
+
+.featured--vertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, rgb(0, 2, 19) 10%, transparent 80%);
+}
+
+
+.featured--horizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgb(0, 2, 19) 20%, transparent 80%);
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+
+.featured--name{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featured--info{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.featured--points,
+.featured--year,
+.featured--seasons{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.featured--points{
+    color: #FF0036;
+}
+
+
+.featured--description{
+    margin-top: 15px;
+    color: #999;
+    font-size: 20px;
+    max-width: 40%;
+}
+
+.featured--buttons{
+    margin-top: 40px;
+}
+
+.featured--watchbuttom,
+.featured--mylistbuttom{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all ease 0.2s;
+}
+
+
+.featured--watchbuttom{
+    background-color: #FF0036;
+    color: #fff;
+    transition: 0.2s;
+}
+
+
+.featured--mylistbuttom{
+    background-color: #333;
+    color: #fff;
+    transition: 0.2s;
+}
+
+
+.featured--watchbuttom:hover,
+.featured--mylistbuttom:hover{
+    opacity: 80%;
+}
+
+
+
+
+.featured--genres{
+    margin-top: 20px;
+    color: #999;
+}
+
+
+
+
+@media (max-width: 760px){
+    .featured{
+        height: 90vh;
+    }
+
+    .featured--name{
+        font-size: 40px;
+    }
+
+    .featured--info{
+        font-size: 16px;
+
+    }
+
+    .featured--description{
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .featured--watchbuttom,
+    .featured--mylistbuttom{
+        font-size: 16px;
+    }
+    .featured--genres{
+        font-size: 14px;
+    }
+}
